@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'FatFrank';
+  src: url('FatFrank-Regular.eot'); /* IE9 Compat Modes */
+  src: url('FatFrank-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('FatFrank-Regular.woff') format('woff'), /* Modern Browsers */
+       url('FatFrank-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('FatFrank-Regular.svg#66354d69a605349760895b91f3e8a8e8') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

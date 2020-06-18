@@ -1,0 +1,233 @@
+
+.logo-change {
+  background: url(../../icons/icon-logo-update.png) no-repeat center center;
+  background-size: contain;
+  display: block;
+  width: 220px;
+  height: 69px;
+  transition: background .5s;
+}
+
+.logo-change:hover,
+.logo-change:focus {
+  background: url(../../icons/icon-logo.png) no-repeat center center;
+  background-size: contain;
+}
+
+/*Maroon clour*/
+.backgroundGradientMaroon {
+        background: linear-gradient(to bottom, Maroon, black);
+        color: black;
+    }
+/*Violate colour*/
+.backgroundGradientViolate {
+        background: linear-gradient(to bottom, #9400D3 , black);
+        color: black;
+    }
+/*Ash colour*/
+.backgroundGradientAsh {
+        background: linear-gradient(to bottom, #6e8179, black);
+        color: black;
+    }
+
+.backgroundGradientDarkblue 
+
+{
+
+        background: linear-gradient(to bottom, #8bc6d1 , #1f3d44 ) ;  /*000064, black// to bottom, #004e87 , #051634 )*/
+        color: black;
+    }
+
+.backgroundGradientLightblue1 {
+
+        background: linear-gradient(to bottom, #e2b581 , #231c14);   /* linear-gradient(to bottom, #0000ed , black ); */
+        color: black;
+    }
+
+.backgroundGradientLightblue2 {
+        background: linear-gradient(to bottom, #ffbb56 , #883c17);  /* linear-gradient(to bottom, #0202ff , black ); */
+        color: black;
+    }
+
+.backgroundGradientLightblue3 {
+        background: linear-gradient(to bottom, #3e77a6 , #19181ffa);
+         /*#02aba1 , #002f2c  linear-gradient(to bottom, #2929ff , black );
+    } */
+
+.backgroundGradientRoyalBlue
+{
+  background: #0D3669 linear-gradient(to bottom,#0575E6 , #021B79 );
+
+}
+
+
+.font-color
+{
+  color: blue;
+}
+
+/*----------end ---------*/
+
+/*Concerns READ MORE color changing*/
+a.change-rm:hover, a.change-rm:active
+{
+  color: #000000;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  left: 65px;
+  
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+  /* Gallery Section CSS */
+
+/* @import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather"); */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+   /*font-family: "Inconsolata", monospace; */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+
+/*@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet");
+body {
+  font-family: 'Bowlby One SC', cursive;
+}*/
+
+
+
+
+button {
+  cursor: pointer;
+}
+
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+  margin: 50px 0px;
+}
+
+.project {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  height: 240px;
+}
+.project img {
+  position: absolute;
+  opacity: 0.9;
+}
+.project p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 3;
+}
+.project .grid__title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  bottom: 0;
+  font-weight: 100;
+  font-size: 0.8em;
+  z-index: 3;
+  text-transform: uppercase;
+  color: #474545;
+  letter-spacing: 2px;
+}
+
+.project:hover .grid__overlay {
+  transform: translateY(0%);
+}
+
+.grid__overlay {
+  background: rgba(229, 182, 177, 0.9);
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  transition: all 0.3s ease-in-out;
+}
+.grid__overlay button {
+  background: none;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.grid__overlay button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: #D1A39E;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(71, 69, 69, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 3;
+}
+
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlay__inner {
+  background: #ffffff;
+  width: 700px;
+  padding: 20px;
+  position: relative;
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: #474545;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.close:hover {
+  color: #D1A39E;
+}
+
+.project__image {
+  height: 200px;
+  width: 100%;
+}
+
+    /* End Gallery Section CSS */
